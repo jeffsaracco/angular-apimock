@@ -215,8 +215,8 @@ module.exports = function (grunt) {
     'uglify',
 		'changelog',
 		'nugetpack',
-		'bump-commit',
-		'nugetpush'
+		'bump-commit'
+//		'nugetpush'
   ]);
 
 	grunt.registerTask('publish', ['publish:patch']);
