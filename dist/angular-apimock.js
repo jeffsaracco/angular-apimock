@@ -1,4 +1,4 @@
-/*! Angular API Mock v0.1.9
+/*! Angular API Mock v0.1.10
  * Licensed with MIT
  * Made with ♥ from Seriema + Redhorn */
 /* Create the main module, `apiMock`. It's the one that needs to be included in
@@ -179,6 +179,7 @@ angular.module('apiMock', [])
 
   newPath += '.' + req.method.toLowerCase() + '.json';
 
+  req.method = 'GET';
   req.url = newPath;
   $log.info('apiMock: rerouting ' + oldPath + ' to ' + newPath);
 
